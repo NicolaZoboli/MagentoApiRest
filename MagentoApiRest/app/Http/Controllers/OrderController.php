@@ -12,7 +12,7 @@ class OrderController extends Controller
       $getToken = Curl::to('https://web-web-fri.gdl.glamdigitallab.it/rest/V1/integration/admin/token?username=friclassroom&password=fri123456')
               ->post();
 
-      $token = json_decode($getToken);
+      $token = json_decode($getToken, true);
 
 
       $getOrders = Curl::to('https://web-web-fri.gdl.glamdigitallab.it/rest/V1/orders?searchCriteria=all')

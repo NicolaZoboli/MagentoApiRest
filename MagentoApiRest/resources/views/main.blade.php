@@ -1,19 +1,19 @@
 @extends('layouts.home')
 
 @section('content')
-  <div class="" style="width:100%">
+  <div class="orders">
 
-    <table style="width:100%">
+    <table>
       <tr>
         <th>#ID</th>
         <th>Country</th>
-        <th>status</th>
+        <th>Status</th>
         <th>Ship To</th>
         <th>Bill To</th>
-        <th>email</th>
-        <th>Purchased on</th>
-        <th>Payment method</th>
-        <th>Grand total</th>
+        <th>Email</th>
+        <th>Purchased On</th>
+        <th>Payment Method</th>
+        <th>Grand Total</th>
       </tr>
 
       @foreach ($orders['items'] as $items => $order)

@@ -1,1 +1,35 @@
-//
+* {
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+
+  .orders {
+
+    width: 100%;
+    padding: 10px;
+
+    table, th, td {
+      border: 1px solid black;
+      text-align: left;
+    }
+
+    table {
+
+      width: 100%;
+
+      th, td {
+
+        padding: 10px;
+      }
+    }
+  }
+}
