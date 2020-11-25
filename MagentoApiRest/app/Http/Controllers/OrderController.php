@@ -19,8 +19,8 @@ class OrderController extends Controller
               ->withBearer($token)
               ->get();
 
-      $orders = json_decode($getOrders);
+      $orders = json_decode($getOrders, true);
 
-      dd($orders);
+      return view('main', compact('orders'));
   }
 }
