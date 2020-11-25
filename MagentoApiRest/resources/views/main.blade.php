@@ -21,8 +21,8 @@
           <td>{{ $order['items']['0']['order_id'] }}</td>
           <td>{{ $order['billing_address']['country_id'] }}</td>
           <td>{{ $order['status'] }}</td>
-          <td>{{ $order['billing_address']['firstname'] }}{{ $order['billing_address']['lastname'] }}</td>
-          <td>{{ $order['billing_address']['firstname'] }}{{ $order['billing_address']['lastname'] }}</td>
+          <td>{{ $order['billing_address']['firstname'] }} {{ $order['billing_address']['lastname'] }}</td>
+          <td>{{ $order['billing_address']['firstname'] }} {{ $order['billing_address']['lastname'] }}</td>
           <td>{{ $order['customer_email'] }}</td>
           <td>{{ $order['created_at'] }}</td>
           <td>{{ $order['payment']['method'] }}</td>
